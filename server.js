@@ -16,6 +16,8 @@ app.get('/', function(req, res) {
 		if (err) throw err;
 		console.log(data);
 		// Send the HTMl response
+		console.log(data);
+		res.setHeader('Content-type','text/html')
 		res.send(data);
 	});
 });
